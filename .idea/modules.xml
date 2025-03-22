@@ -4,6 +4,7 @@
     <modules>
       <module fileurl="file://$PROJECT_DIR$/.idea/EjerciciosJava2025.iml" filepath="$PROJECT_DIR$/.idea/EjerciciosJava2025.iml" />
       <module fileurl="file://$PROJECT_DIR$/Paradigma-Orientada-A-Objetos/Paradigma-Orientada-A-Objetos.iml" filepath="$PROJECT_DIR$/Paradigma-Orientada-A-Objetos/Paradigma-Orientada-A-Objetos.iml" />
+      <module fileurl="file://$PROJECT_DIR$/paradigma-clase2/paradigma-clase2.iml" filepath="$PROJECT_DIR$/paradigma-clase2/paradigma-clase2.iml" />
     </modules>
   </component>
 </project>

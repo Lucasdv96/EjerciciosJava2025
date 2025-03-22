@@ -15,7 +15,7 @@ public class Main {
             System.out.println("Ingrese contraseña: ");
             String userPass = scanner.nextLine();
 
-            if(userName.equals(user) && userPass.equals(pass) ){
+            if(userName.equals(user) && userPass.equals(pass)){
                 System.out.println("Bienvenido: " + user);
                 estaLogeado = true;
                 break;
