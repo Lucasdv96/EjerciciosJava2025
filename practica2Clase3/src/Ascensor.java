@@ -11,6 +11,7 @@ public class Ascensor {
     }
 
     public void setMaterial(String material){
+
         this.material = material;
     }
 
