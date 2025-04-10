@@ -1,11 +1,11 @@
 public class Movilidad {
-    private Regalo premioMerecido;
+    private Premio premioMerecido;
 
-    public Regalo getPremioMerecido() {
+    public Premio getPremioMerecido() {
         return premioMerecido;
     }
 
-    public void setPremioMerecido(Regalo premioMerecido) {
+    public void setPremioMerecido(Premio premioMerecido) {
         this.premioMerecido = premioMerecido;
     }
 }

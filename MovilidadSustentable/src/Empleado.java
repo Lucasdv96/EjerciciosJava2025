@@ -15,7 +15,7 @@ public class Empleado {
     }
 
 
-    public Regalo cualEsMiPremio(){
+    public Premio cualEsMiPremio(){
         return miMovimilidad.getPremioMerecido();
     }
 

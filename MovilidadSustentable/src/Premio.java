@@ -1,4 +1,4 @@
-public class Regalo {
+public class Premio {
     private String descripcion;
 
     public String getDescripcion() {
