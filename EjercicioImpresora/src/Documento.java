@@ -1,8 +1,8 @@
 public class Documento {
-    private int cian = 50;
-    private int magenta = 50;
-    private int amarillo = 50;
-    private int negro = 50;
+    private int cian;
+    private int magenta;
+    private int amarillo;
+    private int negro;
 
     private int cantPaginas;
     private boolean fueImpreso;
@@ -22,6 +22,24 @@ public class Documento {
 
     public int getNegro() {
         return negro;
+    }
+    //SETTERS
+
+
+    public void setCian(int cian) {
+        this.cian = cian;
+    }
+
+    public void setMagenta(int magenta) {
+        this.magenta = magenta;
+    }
+
+    public void setAmarillo(int amarillo) {
+        this.amarillo = amarillo;
+    }
+
+    public void setNegro(int negro) {
+        this.negro = negro;
     }
 
     public void setCantPaginas(int cantPaginas) {
