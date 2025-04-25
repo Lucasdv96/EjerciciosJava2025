@@ -1,8 +1,8 @@
 public class Impresora {
-    private int cian = 1000;
-    private int magenta = 1000;
-    private int amarillo = 1000;
-    int negro = 1000;
+    private int cian;
+    private int magenta;
+    private int amarillo;
+    protected int negro;
 
     private int cantHojas = 100;
     private int cantPaginasImpresas;
@@ -16,6 +16,26 @@ public class Impresora {
         this.amarillo = 1000;
         this.negro = 1000;
         this.cantHojas = 100;
+    }
+
+    public int getCian() {
+        return cian;
+    }
+
+    public int getMagenta() {
+        return magenta;
+    }
+
+    public int getAmarillo() {
+        return amarillo;
+    }
+
+    public int getNegro() {
+        return negro;
+    }
+
+    public int getCantHojas() {
+        return cantHojas;
     }
 
     public boolean podesImprimir(Documento documento){
@@ -36,12 +56,12 @@ public class Impresora {
     protected void descontarHojas(Documento unDocumento){
         this.cantHojas -= unDocumento.getCantPaginas();
     }
+
+
     protected void actualizarContadores(Documento unDocumento){
         this.cantPaginasImpresas += unDocumento.getCantPaginas();
         this.cantDocumentosImpresos ++;
     }
-
-
 
     public Documento imprimi(Documento unDocumento){
         this.descontarTintas(unDocumento);
@@ -50,6 +70,7 @@ public class Impresora {
         unDocumento.fuisteImpreso();
         return unDocumento;
     }
+
 
 
 
