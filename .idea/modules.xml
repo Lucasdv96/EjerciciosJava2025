@@ -3,6 +3,7 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/EjercicioImpresora/EjercicioImpresora.iml" filepath="$PROJECT_DIR$/EjercicioImpresora/EjercicioImpresora.iml" />
+      <module fileurl="file://$PROJECT_DIR$/EjercicioTurnero/EjercicioTurnero.iml" filepath="$PROJECT_DIR$/EjercicioTurnero/EjercicioTurnero.iml" />
       <module fileurl="file://$PROJECT_DIR$/Gimnasio/Ejercicio_Gimnasio.iml" filepath="$PROJECT_DIR$/Gimnasio/Ejercicio_Gimnasio.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/EjerciciosJava2025.iml" filepath="$PROJECT_DIR$/.idea/EjerciciosJava2025.iml" />
       <module fileurl="file://$PROJECT_DIR$/Estacion_De_Servicio/Estacion_De_Servicio.iml" filepath="$PROJECT_DIR$/Estacion_De_Servicio/Estacion_De_Servicio.iml" />
