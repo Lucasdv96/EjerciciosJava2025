@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/CorredoresYSponsors/CorredoresYSponsors.iml" filepath="$PROJECT_DIR$/CorredoresYSponsors/CorredoresYSponsors.iml" />
       <module fileurl="file://$PROJECT_DIR$/EjercicioImpresora/EjercicioImpresora.iml" filepath="$PROJECT_DIR$/EjercicioImpresora/EjercicioImpresora.iml" />
       <module fileurl="file://$PROJECT_DIR$/EjercicioTurnero/EjercicioTurnero.iml" filepath="$PROJECT_DIR$/EjercicioTurnero/EjercicioTurnero.iml" />
       <module fileurl="file://$PROJECT_DIR$/Gimnasio/Ejercicio_Gimnasio.iml" filepath="$PROJECT_DIR$/Gimnasio/Ejercicio_Gimnasio.iml" />
