@@ -1,8 +1,8 @@
-public class Consumidores {
+public class Consumidor {
     private final String nombreConsumidor;
     private final int consumoEnergia;
 
-    public Consumidores(String nombreConsumidor, int consumoEnergia) {
+    public Consumidor(String nombreConsumidor, int consumoEnergia) {
         this.nombreConsumidor = nombreConsumidor;
         this.consumoEnergia = consumoEnergia;
     }
