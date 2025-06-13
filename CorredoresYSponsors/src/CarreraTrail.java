@@ -37,6 +37,7 @@ public class CarreraTrail extends Carrera implements EsSponsoreable{
     }
     // Se puede hacer un contador en vez de hacer un hash.
     // Hay formas de filtrar en los hash
+
     private HashSet<Corredor> cantCorresConMasDe5Puntos(){
         HashSet<Corredor> corredoresMas5 = new HashSet<>();
         //corredores.stream().anyMatch(corredor -> {corredoresMas5(corredor)}
