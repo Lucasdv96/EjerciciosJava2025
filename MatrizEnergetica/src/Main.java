@@ -26,9 +26,9 @@ public class Main {
         parqueEolico.quitarGeneradorEolicto(generadorEolico);
         System.out.println(parqueEolico.calcularCantidadEnergiaAportada());
 
+        centralNuclear.setLimite(5);
         centralNuclear.agregarReactor(reactorNuclear1);
         centralNuclear.agregarReactor(reactorNuclear2);
-        centralNuclear.setLimite(5);
         centralNuclear.setNivelContaminacion(70);
 
         System.out.println(centralNuclear.cantidadDeEnergiaAportada());
@@ -40,5 +40,9 @@ public class Main {
         pinamar.agregarConsumidores(distribuidora);
         System.out.println(pinamar.consumoTotalDeLaciudad());
         System.out.println(centralNuclear.esContaminante());
+
+        pinamar.agregarCentralNuclear(centralNuclear);
+        pinamar.setEficienciaEnergetica(82);
+        System.out.println(pinamar.esEficiente());
     }
 }
