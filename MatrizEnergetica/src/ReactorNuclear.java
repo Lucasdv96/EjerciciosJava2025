@@ -1,10 +1,16 @@
-public class ReactorNuclear extends CentralNuclear{
-    protected int cantEnergia;
-    protected int nivelEmision;
+public class ReactorNuclear extends Generador{
+
 
     public ReactorNuclear(int cantEnergia, int nivelEmision) {
-        this.cantEnergia = cantEnergia;
-        this.nivelEmision = nivelEmision;
+        super(cantEnergia, nivelEmision);
+    }
+
+    public int getCantEnergia(){
+        return cantEnergia;
+    }
+
+    public int getNivelEmision(){
+        return nivelEmision;
     }
 
 

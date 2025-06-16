@@ -6,4 +6,10 @@ public class Consumidor {
         this.nombreConsumidor = nombreConsumidor;
         this.consumoEnergia = consumoEnergia;
     }
+
+    public int getConsumoEnergia() {
+        return consumoEnergia;
+    }
+
+
 }

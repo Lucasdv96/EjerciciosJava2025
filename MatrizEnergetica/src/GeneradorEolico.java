@@ -1,10 +1,8 @@
-public class GeneradorEolico extends ParqueEolico{
-    protected int cantEnergia;
-    protected int nivelEmision;
+public class GeneradorEolico extends Generador{
+
 
     public GeneradorEolico(int cantEnergia, int nivelEmision) {
-        this.cantEnergia = cantEnergia;
-        this.nivelEmision = nivelEmision;
+        super(cantEnergia, nivelEmision);
     }
 
     public int getCantEnergia() {
@@ -14,4 +12,6 @@ public class GeneradorEolico extends ParqueEolico{
     public int getNivelEmision() {
         return nivelEmision;
     }
+
+
 }
