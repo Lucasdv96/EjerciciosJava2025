@@ -12,13 +12,19 @@ public class Main {
         ReactorNuclear reactorNuclear = new ReactorNuclear(150, 41);
         CentralNuclear centralNuclear = new CentralNuclear();
 
+        //CIUDADES
+        Ciudad pinamar = new Ciudad();
+
+
+        //Propietarios
+        Propietario propietario1 = new Propietario(11111111, "Lucas");
+        Propietario propietario2 = new Propietario(22222222, "Ramiro");
+        Propietario propietario3 = new Propietario(33333333, "Mateo");
 
         //CONSUMIDORES
         Consumidor uade = new Consumidor("UADE", 32);
         Consumidor hospital = new Consumidor("Hospital", 50);
         Consumidor distribuidora = new Consumidor("Distribuidora", 68);
-
-
 
         parqueEolico.agregarGeneradoresEolicos(generadorEolico);
         parqueEolico.agregarGeneradoresEolicos(generadorEolico);
@@ -33,7 +39,6 @@ public class Main {
 
         System.out.println(centralNuclear.cantidadDeEnergiaAportada());
 
-        Ciudad pinamar = new Ciudad();
 
         pinamar.agregarConsumidores(uade);
         pinamar.agregarConsumidores(hospital);
@@ -44,5 +49,10 @@ public class Main {
         pinamar.agregarCentralNuclear(centralNuclear);
         pinamar.setEficienciaEnergetica(82);
         System.out.println(pinamar.esEficiente());
+
+        //PUNTO D
+        pinamar.agregarPropietarios(propietario1);
+        pinamar.agregarPropietarios(propietario2);
+        pinamar.agregarPropietarios(propietario3);
     }
 }

@@ -1,4 +1,4 @@
-public class Generador {
+public abstract class Generador {
     protected int cantEnergia;
     protected int nivelEmision;
 

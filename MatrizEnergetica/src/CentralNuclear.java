@@ -1,6 +1,6 @@
 import java.util.HashSet;
 
-public class CentralNuclear {
+public class CentralNuclear extends CentralEnergetica{
     protected int limite ;
     protected int nivelContaminacion;
 

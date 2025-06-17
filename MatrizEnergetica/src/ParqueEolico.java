@@ -1,6 +1,6 @@
 import java.util.ArrayList;
 
-public class ParqueEolico {
+public class ParqueEolico extends CentralEnergetica {
     protected ArrayList<GeneradorEolico> generadoresEolicos = new ArrayList<>();
 
     public void agregarGeneradoresEolicos(GeneradorEolico generadorEolico){
