@@ -1,4 +1,5 @@
 import java.util.HashSet;
+import java.util.stream.Collectors;
 
 public class Ciudad {
     protected HashSet<Consumidor> consumidores = new HashSet<>();
@@ -31,7 +32,13 @@ public class Ciudad {
         return centralNuclears.stream().mapToInt(CentralNuclear::cantDeEmision).sum() > eficienciaEnergetica;
     }
 
-//    public HashSet propietariosDeLaCiudad(){
-//        return propietarios.stream().map()
-//    }
+    //public HashSet propietariosDeLaciudad
+
+    public HashSet propietariosDeLaCiudad(){
+        HashSet<Propietario> propietariosDueniosDeCentrales = new HashSet<>();
+        for(Propietario propietario: propietarios  ){
+            propietariosDueniosDeCentrales.add(propietario);
+            }
+        return propietariosDueniosDeCentrales;
+    }
 }
