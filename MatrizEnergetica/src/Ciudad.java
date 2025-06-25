@@ -1,5 +1,4 @@
 import java.util.HashSet;
-import java.util.stream.Collectors;
 
 public class Ciudad {
     protected HashSet<Consumidor> consumidores = new HashSet<>();
@@ -28,9 +27,23 @@ public class Ciudad {
         return consumidores.stream().mapToInt(Consumidor::getConsumoEnergia).sum();
     }
 
-    public boolean esEficiente(){
-        return centralNuclears.stream().mapToInt(CentralNuclear::cantDeEmision).sum() > eficienciaEnergetica;
+    public HashSet centralesContimanantes(){
+        HashSet<CentralNuclear> centralNuclearesContimantes = new HashSet<>();
+        for(CentralNuclear centralNuclear: centralNuclears){
+            if(centralNuclear.esContaminante()){
+                centralNuclearesContimantes.add(centralNuclear);
+            }
+        }return centralNuclearesContimantes;
     }
+
+    public boolean ciudadNoEsEficiente(){
+        return centralNuclears.stream().anyMatch(CentralNuclear::noEsEficiente);
+    }
+
+
+
+
+
 
     //public HashSet propietariosDeLaciudad
 
@@ -41,4 +54,5 @@ public class Ciudad {
             }
         return propietariosDueniosDeCentrales;
     }
+
 }

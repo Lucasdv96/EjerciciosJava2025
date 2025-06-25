@@ -47,8 +47,8 @@ public class Main {
         centralNuclear.agregarReactor(reactorNuclear2);
         centralNuclear.agregarReactor(reactorNuclear3);
         centralNuclear.agregarReactor(reactorNuclear4);
+        centralNuclear.agregarReactor(reactorNuclear5);
 
-        centralNuclear.setNivelContaminacion(70);
 
         System.out.println("Cantidad de energia aportada"+centralNuclear.cantidadDeEnergiaAportada());
 
@@ -56,12 +56,13 @@ public class Main {
         pinamar.agregarConsumidores(uade);
         pinamar.agregarConsumidores(hospital);
         pinamar.agregarConsumidores(distribuidora);
-        System.out.println("Consumo de la ciudad" + pinamar.consumoTotalDeLaciudad());
+        System.out.println("Consumo de la ciudad: " + pinamar.consumoTotalDeLaciudad());
         System.out.println("La central es contamintante: "+centralNuclear.esContaminante());
 
         pinamar.agregarCentralNuclear(centralNuclear);
-        pinamar.setEficienciaEnergetica(82);
-        System.out.println("La ciudad es eficiente:" + pinamar.esEficiente());
+        System.out.println(pinamar.centralesContimanantes());
+
+        System.out.println("La ciudad de Pinamar es eficiente?: " + pinamar.ciudadNoEsEficiente());
 
         //PUNTO D
         pinamar.agregarPropietarios(propietario1);

@@ -10,6 +10,4 @@ public class Consumidor {
     public int getConsumoEnergia() {
         return consumoEnergia;
     }
-
-
 }

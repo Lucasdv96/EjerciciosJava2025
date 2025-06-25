@@ -2,7 +2,8 @@ import java.util.HashSet;
 
 public class CentralNuclear extends CentralEnergetica{
     protected int limiteCantidadReactores;
-    protected int nivelContaminacion;
+    protected int contamina = 70;
+    protected int eficiencia = 82;
 
     protected HashSet<ReactorNuclear> reactorNuclears = new HashSet<>();
 
@@ -10,8 +11,12 @@ public class CentralNuclear extends CentralEnergetica{
         this.limiteCantidadReactores = limite;
     }
 
-    public void setNivelContaminacion(int nivelContaminacion) {
-        this.nivelContaminacion = nivelContaminacion;
+    public void setContamina(int nivelContaminacion) {
+        this.contamina = nivelContaminacion;
+    }
+
+    public void setEficiencia(int eficiencia) {
+        this.eficiencia = eficiencia;
     }
 
     public void agregarReactor(ReactorNuclear reactorNuclear){
@@ -31,11 +36,14 @@ public class CentralNuclear extends CentralEnergetica{
     }
 
     public boolean esContaminante(){
-        return cantDeEmision() >= nivelContaminacion ;
+        return cantDeEmision() >= contamina ;
     }
 
+    public boolean noEsEficiente(){
+        return cantDeEmision() < eficiencia;
+    }
 
-
-
-
+    public HashSet<ReactorNuclear> getReactorNuclears() {
+        return reactorNuclears;
+    }
 }
