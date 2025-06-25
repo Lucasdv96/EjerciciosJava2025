@@ -30,7 +30,14 @@ public class Main {
 
         parqueEolico.agregarGeneradoresEolicos(generadorEolico);
         parqueEolico.agregarGeneradoresEolicos(generadorEolico);
-        System.out.println("Cantidad de energia aportada" + parqueEolico.calcularCantidadEnergiaAportada());
+        parqueEolico.agregarGeneradoresEolicos(generadorEolico);
+        parqueEolico.agregarGeneradoresEolicos(generadorEolico);
+        parqueEolico.agregarGeneradoresEolicos(generadorEolico);
+        parqueEolico.agregarGeneradoresEolicos(generadorEolico);
+        parqueEolico.agregarGeneradoresEolicos(generadorEolico);
+        parqueEolico.agregarGeneradoresEolicos(generadorEolico);
+
+        System.out.println("Cantidad de energia aportada del parque eolico es:" + parqueEolico.calcularCantidadEnergiaAportada());
         parqueEolico.quitarGeneradorEolicto(generadorEolico);
         System.out.println("Cantidad de energia aportada" + parqueEolico.calcularCantidadEnergiaAportada());
 

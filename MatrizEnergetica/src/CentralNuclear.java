@@ -1,13 +1,13 @@
 import java.util.HashSet;
 
 public class CentralNuclear extends CentralEnergetica{
-    protected int limite ;
+    protected int limiteCantidadReactores;
     protected int nivelContaminacion;
 
     protected HashSet<ReactorNuclear> reactorNuclears = new HashSet<>();
 
     public void setLimite(int limite) {
-        this.limite = limite;
+        this.limiteCantidadReactores = limite;
     }
 
     public void setNivelContaminacion(int nivelContaminacion) {
@@ -16,7 +16,7 @@ public class CentralNuclear extends CentralEnergetica{
 
     public void agregarReactor(ReactorNuclear reactorNuclear){
         reactorNuclears.add(reactorNuclear);
-        if(reactorNuclears.size() > limite){
+        if(reactorNuclears.size() > limiteCantidadReactores){
             throw new CantidadDeReactoresSuperada("Se ha superado la cantidad de reactores");
         }
     }

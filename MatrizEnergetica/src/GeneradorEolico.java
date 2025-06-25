@@ -8,10 +8,4 @@ public class GeneradorEolico extends Generador{
     public int getCantEnergia() {
         return cantEnergia;
     }
-
-    public int getNivelEmision() {
-        return nivelEmision;
-    }
-
-
 }
