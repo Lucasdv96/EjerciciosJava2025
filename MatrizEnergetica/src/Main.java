@@ -2,7 +2,7 @@ public class Main {
     public static void main(String[] args) {
 
         //CIUDADES
-        Ciudad pinamar = new Ciudad();
+        Ciudad pinamar = new Ciudad("Pinamar");
 
         //GENERADORES
 
@@ -60,6 +60,8 @@ public class Main {
         System.out.println("La central es contamintante: "+centralNuclear.esContaminante());
 
         pinamar.agregarCentralNuclear(centralNuclear);
+        pinamar.agregarPartquesEolicos(parqueEolico);
+
         System.out.println(pinamar.centralesContimanantes());
 
         System.out.println("La ciudad de Pinamar es eficiente?: " + pinamar.ciudadNoEsEficiente());
@@ -77,5 +79,26 @@ public class Main {
         propietario3.agregarCentrales(parqueEolico);
 
         System.out.println("Propietarios de la ciudad" + pinamar.propietariosDeLaCiudad());
+
+        // PUNTO E
+        System.out.println(pinamar.produccionTotalDeEnergia());
+        System.out.println(parqueEolico.calcularCantidadEnergiaAportada());
+        System.out.println(centralNuclear.cantidadDeEnergiaAportada());
+
+        System.out.println("La ciudad de "+ pinamar + " es sustentable? " +  pinamar.laCiudadEsSustentable());
+
+        //PUNTO F
+        pinamar.agregarCentralesEnergeticas(parqueEolico);
+        pinamar.agregarCentralesEnergeticas(centralNuclear);
+
+        centralNuclear.setPotenciaMaxima(800);
+        parqueEolico.setPotenciaMaxima(200);
+
+        System.out.println(centralNuclear.centralExcigida());
+
+        System.out.println("Pinamar es una ciudad potencialmente peligrosa? " + pinamar.centralExigida());
+        System.out.println(centralNuclear.cantidadDeEnergiaAportada());
+        System.out.println(parqueEolico.calcularCantidadEnergiaAportada());
+
     }
 }

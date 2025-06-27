@@ -14,4 +14,9 @@ public class ParqueEolico extends CentralEnergetica {
     public int calcularCantidadEnergiaAportada(){
         return generadoresEolicos.stream().mapToInt(GeneradorEolico::getCantEnergia).sum();
     }
+
+    @Override
+    public boolean centralExcigida() {
+        return potenciaMaxima <= calcularCantidadEnergiaAportada();
+    }
 }

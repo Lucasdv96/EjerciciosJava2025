@@ -1,11 +1,24 @@
 import java.util.HashSet;
 
 public class Ciudad {
+    protected String nombre;
     protected HashSet<Consumidor> consumidores = new HashSet<>();
     protected HashSet<CentralNuclear> centralNuclears = new HashSet<>();
+    protected HashSet<ParqueEolico> parqueEolicos = new HashSet<>();
+    protected HashSet<CentralEnergetica> centralEnergeticas = new HashSet<>();
     protected HashSet<Propietario> propietarios = new HashSet<>();
 
     protected int eficienciaEnergetica;
+
+    public Ciudad(String nombre) {
+        this.nombre = nombre;
+    }
+
+    @Override
+    public String toString() {
+        return  nombre;
+
+    }
 
     public void agregarConsumidores(Consumidor c){
         consumidores.add(c);
@@ -18,6 +31,15 @@ public class Ciudad {
     public void agregarPropietarios(Propietario p){
         propietarios.add(p);
     }
+
+    public void agregarPartquesEolicos(ParqueEolico parqueEolico){
+        parqueEolicos.add(parqueEolico);
+    }
+
+    public void agregarCentralesEnergeticas(CentralEnergetica centralEnergetica){
+        centralEnergeticas.add(centralEnergetica);
+    }
+
 
     public void setEficienciaEnergetica(int eficienciaEnergetica) {
         this.eficienciaEnergetica = eficienciaEnergetica;
@@ -41,10 +63,6 @@ public class Ciudad {
     }
 
 
-
-
-
-
     //public HashSet propietariosDeLaciudad
 
     public HashSet propietariosDeLaCiudad(){
@@ -55,4 +73,26 @@ public class Ciudad {
         return propietariosDueniosDeCentrales;
     }
 
+    //E
+
+
+
+    public int produccionTotalDeEnergia(){
+        int sumaCentraleNucleares = centralNuclears.stream().mapToInt(CentralNuclear::cantidadDeEnergiaAportada).sum();
+        int sumaParqueEloicos = parqueEolicos.stream().mapToInt(ParqueEolico::calcularCantidadEnergiaAportada).sum();
+        return  sumaParqueEloicos + sumaCentraleNucleares;
+    }
+
+    public boolean laCiudadEsSustentable(){
+        return consumoTotalDeLaciudad() < produccionTotalDeEnergia();
+    }
+
+    //F
+
+    public boolean centralExigida(){
+        if (centralNuclears.stream().anyMatch(CentralNuclear::centralExcigida) || parqueEolicos.stream().anyMatch(ParqueEolico::centralExcigida)) {
+            return true;
+        }
+        return false;
+    }
 }

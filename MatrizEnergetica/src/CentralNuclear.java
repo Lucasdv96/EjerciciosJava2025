@@ -46,4 +46,9 @@ public class CentralNuclear extends CentralEnergetica{
     public HashSet<ReactorNuclear> getReactorNuclears() {
         return reactorNuclears;
     }
+
+    @Override
+    public boolean centralExcigida() {
+        return potenciaMaxima <= cantidadDeEnergiaAportada();
+    }
 }
