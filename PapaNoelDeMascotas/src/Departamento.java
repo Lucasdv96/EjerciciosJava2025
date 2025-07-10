@@ -1,2 +1,3 @@
-public class Departamento {
+public class Departamento extends Domicilio implements tieneChimenea {
+
 }
