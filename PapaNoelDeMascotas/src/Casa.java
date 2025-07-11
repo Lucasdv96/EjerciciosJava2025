@@ -1,6 +1,12 @@
-public class Casa  extends Domicilio implements tieneChimenea{
+public class Casa extends Domicilio{
+    private boolean tieneChimenea;
+
+    public Casa(boolean tieneChimenea) {
+        this.tieneChimenea = tieneChimenea;
+    }
+
     @Override
-    public boolean fueVisitado() {
-        return false;
+    public boolean esVisitable() {
+        return tieneChimenea;
     }
 }

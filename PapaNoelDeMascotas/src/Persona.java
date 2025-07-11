@@ -1,11 +1,8 @@
-public class Persona implements tiene12{
-
-
-
-
+public class Persona extends Habitante{
 
     @Override
-    public int tiene12() {
-        return 0;
+    public boolean puedeRecibirRegalo() {
+        return getEdad() < 12;
     }
+
 }
