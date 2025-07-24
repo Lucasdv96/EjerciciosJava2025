@@ -10,7 +10,6 @@ public class CuponCategoria extends Cupon{
 
     @Override
     public int aplicarCupon(Carrito carrito) {
-
         return 0;
     }
 }

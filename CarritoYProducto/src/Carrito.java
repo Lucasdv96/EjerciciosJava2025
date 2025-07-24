@@ -6,6 +6,9 @@ public class Carrito {
     private ArrayList<Producto> productos = new ArrayList<>();
     private HashSet<Cupon> cupons = new HashSet<>();
 
+    public Carrito(Cliente cliente) {
+        this.cliente = cliente;
+    }
 
     public ArrayList<Producto> getProductos() {
         return productos;
@@ -17,7 +20,12 @@ public class Carrito {
         }
     }
 
-    public int calcularTotalProducto(){
-        return productos.stream().mapToInt(Producto::getPrecio).sum();
+    public double calcularTotalProducto(){
+        return productos.stream().mapToDouble(Producto::getPrecio).sum();
     }
+
+    public String conocerNombreCliente() {
+        return  cliente.getNombre();
+    }
+
 }
