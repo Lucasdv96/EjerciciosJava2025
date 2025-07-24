@@ -61,8 +61,4 @@ public class Cancion {
     public HashSet<Usuario> getUsuariosOyentes(){
         return usuariosOyentes;
     }
-
-
-
-
 }

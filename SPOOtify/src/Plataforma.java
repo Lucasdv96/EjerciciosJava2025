@@ -25,7 +25,6 @@ public class Plataforma {
     }
 
     public HashSet getArtistas() {
-        HashSet<String> artistas = new HashSet<>();
         return (HashSet) canciones
                 .stream()
                 .map(cancion -> cancion.getNombreArtista())
