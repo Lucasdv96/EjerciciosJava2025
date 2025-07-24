@@ -1,3 +1,5 @@
+package DELVALLE_1140171.src;
+
 public class Categoria {
     private boolean puedeSerEnviado;
 

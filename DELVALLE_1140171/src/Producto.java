@@ -1,3 +1,5 @@
+package DELVALLE_1140171.src;
+
 public class Producto {
     private String nombreProducto;
     private int precioUnitario;

@@ -1,3 +1,5 @@
+package DELVALLE_1140171.src;
+
 public class CuponDescuentoPorCategoria extends Cupon {
     private Categoria categoria;
 
