@@ -4,10 +4,14 @@ public class ActividadCompartida {
     private boolean puedenParticiar;
 
 
-    public ActividadCompartida(int edadMinima, Grupo grupo) {
+    public ActividadCompartida(int edadMinima) {
         this.edadMinima = edadMinima;
+    }
+
+    public void setGrupo(Grupo grupo) {
         this.grupo = grupo;
     }
+
 
     private void esAptaParaElgrupo(){
 
