@@ -32,6 +32,7 @@ public class Carrito {
 
 
     public void agregarProducto2(Producto producto){ //ACA ESTOY INTENTANDO HACER EL PUNTO 2 BIEN
+        
 
     }
 
